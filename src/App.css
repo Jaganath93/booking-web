@@ -1,0 +1,23 @@
+.header-section{
+    background: url("https://booking.webestica.com/assets/images/category/hotel/resort/bg-01.jpg") no-repeat center;
+    background-size: cover;
+    display:block;
+    padding:0 !important;
+    margin:0;
+    height: 100%;
+    min-width: 100%;
+    background-color: rgb(0, 0, 0,0.5);
+    /* filter: brightness(80%); */
+}
+
+.exp-card{
+    border-radius: 20px;
+    filter: brightness(70%);
+}
+
+.gal-style{
+    /* background-image:url("https://booking.webestica.com/assets/images/category/hotel/resort/04.jpg");
+     background-position: center left;
+      background-size: cover; */
+      filter: brightness(70%);
+}
