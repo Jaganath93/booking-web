@@ -23,7 +23,7 @@ export const NavBar = ()=>{
     return(
         <div className="header-section">
             <div role="img">
-        <div className="container-fluid p-5 pt-4">
+        <div className="container-fluid p-0 p-md-5 pt-4">
             <div className="row">
 
              {/* Booking Logo Starts Here  */}
@@ -60,8 +60,8 @@ export const NavBar = ()=>{
            {/* NavBar Col with Menu Icon for Small Devices Ends Here*/}
 
 
-            <div className="d-flex justify-content-end pt-0 pt-xl-2">
-            <button type="button" className="header-btn fw-bold rounded" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><FontAwesomeIcon icon={faCalendar} style={{color: "#f2f2f2"}} className="me-2"/>Book a Stay</button>
+            <div className="d-flex justify-content-end pt-xl-2">
+            <button type="button" className="header-btn fw-bold rounded me-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><FontAwesomeIcon icon={faCalendar} style={{color: "#f2f2f2"}} className="me-0 me-md-2"/>Book a Stay</button>
             </div>
            </div>
            {/* Button Col Ends Here*/}
@@ -84,7 +84,7 @@ export const NavBar = ()=>{
            {/* Increasing bg Image height using opacity Starts Here */}
            <div className="text-muted opacity-hidden"><span>dhcdcd</span></div>
            <div className="text-muted opacity-hidden"><span>dhcdcd</span></div>
-           <div className="text-muted opacity-hidden"><span>dhcdcd</span></div>
+           {/* <div className="text-muted opacity-hidden"><span>dhcdcd</span></div> */}
            {/* Increasing bg Image height using opacity Ends Here */}
            
            

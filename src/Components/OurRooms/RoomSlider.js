@@ -49,7 +49,7 @@ export const RoomSlider = ()=>{
     {roomData?.map((room,i)=>(
         <>
         <div class={`carousel-item ${i==0 ? 'active' : ""} room-slider`}>
-        <img src={room.img} class="d-block w-100 p-5 exp-card" style={{borderRadius:'75px'}} alt={room.room}/>
+        <img src={room.img} class="d-block w-100 p-5 exp-card" style={{borderRadius:'75px'}} alt={room.room}/>        
         <div class="carousel-caption bg-light text-dark w-50 h-25">
           <div className="container d-flex flex-column justify-content-start">
             <div className="row">

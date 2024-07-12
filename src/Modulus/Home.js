@@ -23,7 +23,7 @@ export const Home = ()=>{
         </div>
 
         <div className="pt-5 mt-5">
-            {/* <Rooms/> */}
+            <Rooms/>
         </div>
 
         <div className="pt-5 mt-5">
