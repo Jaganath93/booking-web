@@ -1,3 +1,4 @@
+import { Footer } from "../Components/Footer";
 import { Gallery } from "../Components/Gallery/Gallery";
 import { NavBar } from "../Components/HomeStart/NavBar";
 import { Experience } from "../Components/OurExperience/Experience";
@@ -32,6 +33,10 @@ export const Home = ()=>{
 
         <div className="pt-5 mt-5">
             <Gallery/>
+        </div>
+
+        <div className="pt-5 mt-5">
+            <Footer/>
         </div>
         </>
     )

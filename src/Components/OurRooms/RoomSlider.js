@@ -39,7 +39,6 @@ export const RoomSlider = ()=>{
     {roomData?.map((room,i)=>(
         <>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={i} class={`${i==0 ? "active" : ""}`} aria-current={`${i===0 ?"true" : ""}`} aria-label={`Slide ${i+1}`}></button>
-        {/* <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={i} aria-label="Slide 2"></button> */}
     </>
 
     ))}
@@ -48,23 +47,27 @@ export const RoomSlider = ()=>{
   <div class="carousel-inner">
     {roomData?.map((room,i)=>(
         <>
-        <div class={`carousel-item ${i==0 ? 'active' : ""} room-slider`}>
-        <img src={room.img} class="d-block w-100 p-5 exp-card" style={{borderRadius:'75px'}} alt={room.room}/>        
-        <div class="carousel-caption bg-light text-dark w-50 h-25">
+        <div class={`carousel-item ${i==0 ? 'active' : ""} room-slider h-100 `}>
+        <img src={room.img} class="d-block w-100 p-5" style={{borderRadius:'65px'}} alt={room.room}/>  
+        <div className="position-absolute">
+          <p className="bg-danger">Hello</p>
+          </div>      
+        <div class="carousel-caption bg-light text-dark w-50 position-absolute">
           <div className="container d-flex flex-column justify-content-start">
             <div className="row">
                 <div className="col-12 pt-3 mt-3">
                     <h1 className="mt-0 pt-0 fw-bold text-center">{room.room}</h1>
-                    <p className="w-100 text-start"><ul className="row">
+                    <p className="w-100 text-start">
+                        <ul className="row">
                         <li className="list-unstyled col-1"></li>
                         <li className="list-unstyled col-4 text-end">{room.roomSqft} SQ.Ft</li>
                         <li className="list-unstyled col-4 text-start">{room.roomSqmt} SQ.M</li>
-                        </ul></p>
+                        </ul>
+                    </p>
                 </div>
             </div>
-            <div className="row">
-                <p className="col-4"></p>
-                    <p className="text-muted col-3 ms-0 ps-0 text-start">{room.about}</p>
+            <div className="row text-center">
+                    <p className="text-muted col-6 ms-0 ps-0 text-center">{room.about}</p>
                 </div>
           </div>
         </div>

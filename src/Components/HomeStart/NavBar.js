@@ -23,7 +23,7 @@ export const NavBar = ()=>{
     return(
         <div className="header-section">
             <div role="img">
-        <div className="container-fluid p-0 p-md-5 pt-4">
+        <div className="container-fluid p-0 p-md-5 pt-4 opacity-100">
             <div className="row">
 
              {/* Booking Logo Starts Here  */}
@@ -61,7 +61,8 @@ export const NavBar = ()=>{
 
 
             <div className="d-flex justify-content-end pt-xl-2">
-            <button type="button" className="header-btn fw-bold rounded me-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><FontAwesomeIcon icon={faCalendar} style={{color: "#f2f2f2"}} className="me-0 me-md-2"/>Book a Stay</button>
+            <button type="button" className="header-btn fw-bold rounded me-0"><FontAwesomeIcon icon={faCalendar} style={{color: "#f2f2f2"}} className="me-0 me-md-2"/>Book a Stay</button>
+            {/* <button type="button" className="header-btn fw-bold rounded me-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><FontAwesomeIcon icon={faCalendar} style={{color: "#f2f2f2"}} className="me-0 me-md-2"/>Book a Stay</button> */}
             </div>
            </div>
            {/* Button Col Ends Here*/}
@@ -69,7 +70,7 @@ export const NavBar = ()=>{
 
            {/* Side Drawer section Starts Here */}
            <>
-              <SideDrawer/> 
+              {/* <SideDrawer/>  */}
            </>
            {/* Side Drawer section Ends Here */}
 
